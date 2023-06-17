@@ -100,7 +100,18 @@ void set_LCD_transmission_mode(uint8_t RS, char DATA){
 	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_7,  0); // reset EN
 }
 
-void transmit_characters(char* string){
+void transmit_characters_to_1st_line(char* string){
+
+	transmit_bits_to_LCD(0, 0b00000010); // set cursor to the 1st column of 2nd line
+	while(*string != '\0'){
+		transmit_bits_to_LCD(1,*string);
+		string++;
+	}
+}
+
+void transmit_characters_to_2nd_line(char* string){
+
+	transmit_bits_to_LCD(0, 0b11000000); // set cursor to the 1st column of 2nd line
 	while(*string != '\0'){
 		transmit_bits_to_LCD(1,*string);
 		string++;
@@ -146,6 +157,7 @@ int main(void)
   HAL_Delay(1000);
   char INSTRUCTION_ON_POWERUP_4BIT_MODE = 0b00100000;
   char INSTRUCTION_4BIT_MODE_AND_5X8FONT_AND_1LINEDISPLAY = 0b00100000;
+  char INSTRUCTION_4BIT_MODE_AND_5X8FONT_AND_2LINEDISPLAY = 0b00101000;
   char INSTRUCTION_TURNON_DISPLAY_AND_CURSOR = 0b00001110;
   char INSTRUCTION_MOVE_CURSOR_ON_WRITE = 0b00000110;
   char INSTRCTION_RETURN_TO_1STLINE = 0b00000010;
@@ -155,7 +167,7 @@ int main(void)
   uint8_t DATA_REGISTER = 1;
 
   set_LCD_transmission_mode(INSTRUCTION_REGISTER, INSTRUCTION_ON_POWERUP_4BIT_MODE);
-  transmit_bits_to_LCD(INSTRUCTION_REGISTER,INSTRUCTION_4BIT_MODE_AND_5X8FONT_AND_1LINEDISPLAY);
+  transmit_bits_to_LCD(INSTRUCTION_REGISTER,INSTRUCTION_4BIT_MODE_AND_5X8FONT_AND_2LINEDISPLAY);
   transmit_bits_to_LCD(INSTRUCTION_REGISTER,INSTRUCTION_TURNON_DISPLAY_AND_CURSOR);
   transmit_bits_to_LCD(INSTRUCTION_REGISTER,INSTRUCTION_MOVE_CURSOR_ON_WRITE);
   transmit_bits_to_LCD(INSTRUCTION_REGISTER,INSTRCTION_RETURN_TO_1STLINE);
@@ -171,9 +183,12 @@ int main(void)
   transmit_bits_to_LCD(INSTRUCTION_REGISTER,INSTRCTION_CLEAR_DISPLAY);
 */
 
-  char V[] = "12345";
-  transmit_characters(V);
+  char V[] = "Vset:20V <3 ,,/,,";
+  transmit_characters_to_1st_line(V);
 
+
+  char I[] = "Iset:3A <3";
+  transmit_characters_to_2nd_line(I);
   /* USER CODE END 2 */
 
   /* Infinite loop */

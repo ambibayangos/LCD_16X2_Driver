@@ -1076,3 +1076,183 @@ Finished building: default.size.stdout
  
 Finished building: LCD_16X2_Driver.list
  
+22:07:26 **** Incremental Build of configuration Debug for project LCD_16X2_Driver ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:11: warning: unused variable 'DATA_REGISTER' [-Wunused-variable]
+  155 |   uint8_t DATA_REGISTER = 1;
+      |           ^~~~~~~~~~~~~
+../Core/Src/main.c:152:8: warning: unused variable 'INSTRCTION_CLEAR_DISPLAY' [-Wunused-variable]
+  152 |   char INSTRCTION_CLEAR_DISPLAY = 0b00000001;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LCD_16X2_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\LCD_16X2_Driver\LCD_16X2_Driver\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_16X2_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD_16X2_Driver.elf
+ 
+arm-none-eabi-size   LCD_16X2_Driver.elf 
+arm-none-eabi-objdump -h -S  LCD_16X2_Driver.elf  > "LCD_16X2_Driver.list"
+   text	   data	    bss	    dec	    hex	filename
+  12900	     20	   1700	  14620	   391c	LCD_16X2_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD_16X2_Driver.list
+ 
+22:07:57 **** Incremental Build of configuration Debug for project LCD_16X2_Driver ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:11: warning: unused variable 'DATA_REGISTER' [-Wunused-variable]
+  155 |   uint8_t DATA_REGISTER = 1;
+      |           ^~~~~~~~~~~~~
+../Core/Src/main.c:152:8: warning: unused variable 'INSTRCTION_CLEAR_DISPLAY' [-Wunused-variable]
+  152 |   char INSTRCTION_CLEAR_DISPLAY = 0b00000001;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LCD_16X2_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\LCD_16X2_Driver\LCD_16X2_Driver\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_16X2_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD_16X2_Driver.elf
+ 
+arm-none-eabi-size   LCD_16X2_Driver.elf 
+arm-none-eabi-objdump -h -S  LCD_16X2_Driver.elf  > "LCD_16X2_Driver.list"
+   text	   data	    bss	    dec	    hex	filename
+  12900	     20	   1700	  14620	   391c	LCD_16X2_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD_16X2_Driver.list
+ 
+22:09:22 **** Incremental Build of configuration Debug for project LCD_16X2_Driver ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:11: warning: unused variable 'DATA_REGISTER' [-Wunused-variable]
+  155 |   uint8_t DATA_REGISTER = 1;
+      |           ^~~~~~~~~~~~~
+../Core/Src/main.c:152:8: warning: unused variable 'INSTRCTION_CLEAR_DISPLAY' [-Wunused-variable]
+  152 |   char INSTRCTION_CLEAR_DISPLAY = 0b00000001;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LCD_16X2_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\LCD_16X2_Driver\LCD_16X2_Driver\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_16X2_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD_16X2_Driver.elf
+ 
+arm-none-eabi-size   LCD_16X2_Driver.elf 
+arm-none-eabi-objdump -h -S  LCD_16X2_Driver.elf  > "LCD_16X2_Driver.list"
+   text	   data	    bss	    dec	    hex	filename
+  12912	     20	   1700	  14632	   3928	LCD_16X2_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD_16X2_Driver.list
+ 
+22:14:31 **** Incremental Build of configuration Debug for project LCD_16X2_Driver ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:166:11: warning: unused variable 'DATA_REGISTER' [-Wunused-variable]
+  166 |   uint8_t DATA_REGISTER = 1;
+      |           ^~~~~~~~~~~~~
+../Core/Src/main.c:163:8: warning: unused variable 'INSTRCTION_CLEAR_DISPLAY' [-Wunused-variable]
+  163 |   char INSTRCTION_CLEAR_DISPLAY = 0b00000001;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LCD_16X2_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\LCD_16X2_Driver\LCD_16X2_Driver\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_16X2_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD_16X2_Driver.elf
+ 
+arm-none-eabi-size   LCD_16X2_Driver.elf 
+arm-none-eabi-objdump -h -S  LCD_16X2_Driver.elf  > "LCD_16X2_Driver.list"
+   text	   data	    bss	    dec	    hex	filename
+  12920	     20	   1700	  14640	   3930	LCD_16X2_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD_16X2_Driver.list
+ 
+22:14:34 **** Incremental Build of configuration Debug for project LCD_16X2_Driver ****
+make -j8 all 
+arm-none-eabi-size   LCD_16X2_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12920	     20	   1700	  14640	   3930	LCD_16X2_Driver.elf
+Finished building: default.size.stdout
+ 
+22:18:45 **** Incremental Build of configuration Debug for project LCD_16X2_Driver ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:11: warning: unused variable 'DATA_REGISTER' [-Wunused-variable]
+  167 |   uint8_t DATA_REGISTER = 1;
+      |           ^~~~~~~~~~~~~
+../Core/Src/main.c:164:8: warning: unused variable 'INSTRCTION_CLEAR_DISPLAY' [-Wunused-variable]
+  164 |   char INSTRCTION_CLEAR_DISPLAY = 0b00000001;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:159:8: warning: unused variable 'INSTRUCTION_4BIT_MODE_AND_5X8FONT_AND_1LINEDISPLAY' [-Wunused-variable]
+  159 |   char INSTRUCTION_4BIT_MODE_AND_5X8FONT_AND_1LINEDISPLAY = 0b00100000;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LCD_16X2_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\LCD_16X2_Driver\LCD_16X2_Driver\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_16X2_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD_16X2_Driver.elf
+ 
+arm-none-eabi-size   LCD_16X2_Driver.elf 
+arm-none-eabi-objdump -h -S  LCD_16X2_Driver.elf  > "LCD_16X2_Driver.list"
+   text	   data	    bss	    dec	    hex	filename
+  12924	     20	   1700	  14644	   3934	LCD_16X2_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD_16X2_Driver.list
+ 
+22:19:46 **** Incremental Build of configuration Debug for project LCD_16X2_Driver ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:190:8: warning: unused variable 'I' [-Wunused-variable]
+  190 |   char I[] = "Iset:3A <3";
+      |        ^
+../Core/Src/main.c:167:11: warning: unused variable 'DATA_REGISTER' [-Wunused-variable]
+  167 |   uint8_t DATA_REGISTER = 1;
+      |           ^~~~~~~~~~~~~
+../Core/Src/main.c:164:8: warning: unused variable 'INSTRCTION_CLEAR_DISPLAY' [-Wunused-variable]
+  164 |   char INSTRCTION_CLEAR_DISPLAY = 0b00000001;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:159:8: warning: unused variable 'INSTRUCTION_4BIT_MODE_AND_5X8FONT_AND_1LINEDISPLAY' [-Wunused-variable]
+  159 |   char INSTRUCTION_4BIT_MODE_AND_5X8FONT_AND_1LINEDISPLAY = 0b00100000;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LCD_16X2_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\LCD_16X2_Driver\LCD_16X2_Driver\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_16X2_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD_16X2_Driver.elf
+ 
+arm-none-eabi-size   LCD_16X2_Driver.elf 
+arm-none-eabi-objdump -h -S  LCD_16X2_Driver.elf  > "LCD_16X2_Driver.list"
+   text	   data	    bss	    dec	    hex	filename
+  13056	     20	   1700	  14776	   39b8	LCD_16X2_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD_16X2_Driver.list
+ 
+22:19:50 **** Incremental Build of configuration Debug for project LCD_16X2_Driver ****
+make -j8 all 
+arm-none-eabi-size   LCD_16X2_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13056	     20	   1700	  14776	   39b8	LCD_16X2_Driver.elf
+Finished building: default.size.stdout
+ 
+22:20:16 **** Incremental Build of configuration Debug for project LCD_16X2_Driver ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:167:11: warning: unused variable 'DATA_REGISTER' [-Wunused-variable]
+  167 |   uint8_t DATA_REGISTER = 1;
+      |           ^~~~~~~~~~~~~
+../Core/Src/main.c:164:8: warning: unused variable 'INSTRCTION_CLEAR_DISPLAY' [-Wunused-variable]
+  164 |   char INSTRCTION_CLEAR_DISPLAY = 0b00000001;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:159:8: warning: unused variable 'INSTRUCTION_4BIT_MODE_AND_5X8FONT_AND_1LINEDISPLAY' [-Wunused-variable]
+  159 |   char INSTRUCTION_4BIT_MODE_AND_5X8FONT_AND_1LINEDISPLAY = 0b00100000;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "LCD_16X2_Driver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\artur\Desktop\LCD_16X2_Driver\LCD_16X2_Driver\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LCD_16X2_Driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LCD_16X2_Driver.elf
+ 
+arm-none-eabi-size   LCD_16X2_Driver.elf 
+arm-none-eabi-objdump -h -S  LCD_16X2_Driver.elf  > "LCD_16X2_Driver.list"
+   text	   data	    bss	    dec	    hex	filename
+  13056	     20	   1700	  14776	   39b8	LCD_16X2_Driver.elf
+Finished building: default.size.stdout
+ 
+Finished building: LCD_16X2_Driver.list
+ 
+22:20:24 **** Incremental Build of configuration Debug for project LCD_16X2_Driver ****
+make -j8 all 
+arm-none-eabi-size   LCD_16X2_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13056	     20	   1700	  14776	   39b8	LCD_16X2_Driver.elf
+Finished building: default.size.stdout
+ 

@@ -1,8 +1,9 @@
 ../Core/Src/main.c:55:6:transmit_bits_to_LCD	16	static
 ../Core/Src/main.c:85:6:set_LCD_transmission_mode	16	static
-../Core/Src/main.c:103:6:transmit_characters	16	static
-../Core/Src/main.c:120:5:main	24	static
-../Core/Src/main.c:194:6:SystemClock_Config	96	static
-../Core/Src/main.c:244:13:MX_USART2_UART_Init	8	static
-../Core/Src/main.c:279:13:MX_GPIO_Init	48	static
-../Core/Src/main.c:339:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:103:6:transmit_characters_to_1st_line	16	static
+../Core/Src/main.c:112:6:transmit_characters_to_2nd_line	16	static
+../Core/Src/main.c:131:5:main	56	static
+../Core/Src/main.c:209:6:SystemClock_Config	96	static
+../Core/Src/main.c:259:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:294:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:354:6:Error_Handler	4	static,ignoring_inline_asm

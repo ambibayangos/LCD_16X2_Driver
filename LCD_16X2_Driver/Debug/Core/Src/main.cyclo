@@ -1,0 +1,8 @@
+main.c:55:6:transmit_bits_to_LCD	1
+main.c:85:6:set_LCD_transmission_mode	1
+main.c:103:6:transmit_characters	2
+main.c:120:5:main	1
+main.c:194:6:SystemClock_Config	4
+main.c:244:13:MX_USART2_UART_Init	2
+main.c:279:13:MX_GPIO_Init	1
+main.c:339:6:Error_Handler	1
